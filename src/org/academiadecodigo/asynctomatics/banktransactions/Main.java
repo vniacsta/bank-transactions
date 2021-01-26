@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         // creating a new instance person
-        Person person = new Person("Elsa");
+        Person person = new Person("Elsa", 1234);
 
         // call several methods depending on what you want to do
         person.checkBalance();

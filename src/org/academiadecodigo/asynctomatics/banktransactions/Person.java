@@ -3,10 +3,16 @@ package org.academiadecodigo.asynctomatics.banktransactions;
 public class Person {
 
     private String name;
+    private static int pin;
 
     // creating the constructor
-    public Person(String name) {
+    public Person(String name, int pin) {
         this.name = name;
+        Person.pin = pin;
+    }
+
+    public static int getPin() {
+        return pin;
     }
 
     // methods to communicate to the bank
