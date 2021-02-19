@@ -17,7 +17,7 @@ public class Person {
 
     // methods to communicate to the bank
     public void checkBalance() {
-        Bank.BEST_BANK.displayBalance(name);
+        Bank.BEST_BANK.displayBalance();
     }
 
     public void depositMoney(int needToDeposit) {

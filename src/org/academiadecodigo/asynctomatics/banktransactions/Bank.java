@@ -2,7 +2,7 @@ package org.academiadecodigo.asynctomatics.banktransactions;
 
 public enum Bank {
 
-    BEST_BANK(380, 1224);
+    BEST_BANK(380, 1234);
 
     private int balance;
     private int secretPin;
@@ -15,8 +15,8 @@ public enum Bank {
     public void depositMoney(String name, int needToDeposit) {
         if (Person.getPin() == secretPin) {
             balance += needToDeposit;
-            System.out.println("Hello " + name + "! Deposit confirmed.");
-            displayBalance(name);
+            System.Balaout.println("Hello " + name + "! Deposit confirmed.");
+            displaynce();
         }
     }
 
@@ -30,7 +30,7 @@ public enum Bank {
                 System.out.println("Sorry " + name + "" + "! No funds of that amount. Check your " +
                         "balance.");
             }
-            displayBalance(name);
+            displayBalance();
         }
     }
 
@@ -44,11 +44,11 @@ public enum Bank {
                 System.out.println("Sorry " + name + "" + "! No funds to transfer that amount. " +
                         "Check your balance.");
             }
-            displayBalance(name);
+            displayBalance();
         }
     }
 
-    public void displayBalance(String name) {
+    public void displayBalance() {
         if (Person.getPin() == secretPin) {
             System.out.println("Your current balance is " + balance + ".");
         } else {
